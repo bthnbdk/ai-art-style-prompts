@@ -1,0 +1,40 @@
+AI Art Style Prompt Library
+Copyright (c) 2026 bthnbdk (https://github.com/bthnbdk)
+
+The prompt text, dataset (data/styles.json), documentation and the generated
+sample images in this repository are licensed under the
+
+    Creative Commons Attribution 4.0 International License (CC BY 4.0)
+
+You are free to:
+
+    Share  — copy and redistribute the material in any medium or format
+    Adapt  — remix, transform, and build upon the material for any purpose,
+             even commercially.
+
+Under the following terms:
+
+    Attribution — You must give appropriate credit, provide a link to the
+    license, and indicate if changes were made. You may do so in any reasonable
+    manner, but not in any way that suggests the licensor endorses you or your
+    use.
+
+Full legal text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+Suggested attribution:
+
+    "AI Art Style Prompt Library" (https://github.com/bthnbdk/ai-art-style-prompts),
+    licensed CC BY 4.0.
+
+STYLE MOTIFS SOURCED FROM THE AESTHETICS WIKI
+---------------------------------------------
+136 of the styles take their motif / palette / mood descriptions from
+articles on aesthetics.fandom.com (text available under CC BY-SA); this
+library reproduces those descriptive fragments with attribution. When reusing
+those specific entries, credit the Aesthetics Wiki as well.
+
+SAMPLE IMAGES
+-------------
+Sample images were generated with Google Vertex AI (gemini-2.5-flash-image) from
+a single fixed subject. They are synthetic outputs, not photographs of any real
+person or place.

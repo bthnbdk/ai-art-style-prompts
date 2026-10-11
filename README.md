@@ -1,6 +1,6 @@
 # AI Art Style Prompt Library
 
-**314 art styles · 942 ready-to-use prompts** for AI image generation — each style ships with a sample image, a **title-driven high-CTR YouTube thumbnail prompt** and a **cinematic video-image prompt**, plus a bare style block you can drop into anything.
+**337 art styles · 1011 ready-to-use prompts** for AI image generation — each style ships with a sample image, a **title-driven high-CTR YouTube thumbnail prompt** and a **cinematic video-image prompt**, plus a bare style block you can drop into anything.
 
 **Live gallery → https://ai-art-style-prompts.netlify.app**
 
@@ -24,6 +24,8 @@ All sample images were generated with:
 - **Model:** `gemini-2.5-flash-image` (Google Vertex AI), 1024×1024
 - **Same subject:** *"a lone figure standing in an open landscape"*
 - **Same lighting, composition and render instruction** on every card
+
+One documented exception: **Continuous Line Drawing** is generated with *"flat even paper-white light, no cast shadow, no tonal shading"* instead of the shared chiaroscuro line — a single-contour drawing has no tonal shading, so the shared lighting line would contradict the style. Both the sample image and the prompt shown on the card use that override.
 
 The **only variable is the style block**. Generate each style with a different subject and you end up comparing subjects, not styles.
 
@@ -82,13 +84,13 @@ Verified renders from this exact template (16:9, title baked in): see [`img/exam
 
 ## Data
 
-`data/styles.json` — the whole library (314 styles × 4 prompt fields):
+`data/styles.json` — the whole library (337 styles × 4 prompt fields):
 
 ```json
 {
   "generator": "Google Vertex AI · gemini-2.5-flash-image",
   "subject": "a lone figure standing in an open landscape",
-  "count": 314,
+  "count": 337,
   "prompts_per_style": 3,
   "styles": [
     {
@@ -116,18 +118,20 @@ Verified renders from this exact template (16:9, title baked in): see [`img/exam
 | Label | Count | Meaning |
 |---|---|---|
 | **Aesthetics Wiki** | 136 | Style motifs, palettes and mood lines taken from [aesthetics.fandom.com](https://aesthetics.fandom.com) — the original 96 from *Category:Art Movements*, 40 more from article infoboxes (`key_motifs` / `key_colours` / `key_values`). |
-| **Authored** | 166 | The style is a documented art/design/film tradition; the prompt text was written for this library from art-history knowledge. |
+| **Authored** | 189 | The style is a documented art/design/film/technique tradition; the prompt text was written for this library from art-history and craft knowledge — includes the whole **Drawing & sketching** group and the whiteboard / explainer-doodle / storyboard / blueprint / wireframe / marker-rendering techniques. |
 | **Invented** | 12 | New styles invented for this library (Neural Bloom, Promptcore, Datamosh Rococo, Solastalgia, Zero-Gothic, Halide Dream, Chrome Nouveau, Chthonic Rococo, Terminal Romanticism, Botanica Machina, Ghostlight Noir, Anadolu Retro-Futurism). |
 
 ## Groups
 
-`art-movement` (111) · `traditional` (35) · `architecture` (34) · `cinema` (22) · `design` (20) · `internet-aesthetic` (19) · `illustration` (19) · `photography` (17) · `gameart` (15) · `street` (10) · `invented` (12)
+`art-movement` (111) · `traditional` (35) · `architecture` (34) · `design` (25) · `cinema` (24) · `internet-aesthetic` (21) · `illustration` (21) · `photography` (17) · `gameart` (15) · `drawing` (12) · `invented` (12) · `street` (10)
+
+The **Drawing & sketching** group covers working-media techniques rather than historical movements: graphite pencil, charcoal, sanguine chalk, silverpoint, coloured pencil, soft pastel, kraft paper, continuous line, cross-hatch pen, ballpoint biro, ink & wash urban sketching and chalkboard chalk. The board-and-explainer side sits next to its relatives — **Whiteboard Animation** and **Doodle Explainer** under illustration, **Dry-Erase Glass Board**, **Technical Blueprint**, **UX Wireframe Sketch**, **Marker Rendering** and **Sticky-Note Doodle Notes** under graphic design, **Storyboard Marker Sketch** and **Rough Animatic Pencil** under cinema, and **Studyblr Notes** / **MS Paint Doodle** under internet aesthetic.
 
 ## Files
 
 ```
 index.html          the gallery (static, no build step, no dependencies)
-data/styles.json    all 314 styles × 3 prompts + style blocks (942 prompts total)
+data/styles.json    all 337 styles × 3 prompts + style blocks (1011 prompts total)
 img/                900×900 sample images (1 per style)
 img/examples/       16:9 verified thumbnail renders (title-driven recipe, title baked in)
 ```
